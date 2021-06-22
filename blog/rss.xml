@@ -4,15 +4,43 @@
         <title>Apache APISIX™ Blog</title>
         <link>https://apisix.apache.org/blog</link>
         <description>Apache APISIX™ Blog</description>
-        <lastBuildDate>Mon, 07 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Apache APISIX Ingress Controller 首个 GA 版本 v1.0 正式发布！]]></title>
+            <link>https://apisix.apache.org/blog/2021/06/18/first-GA-version-v1.0-of-Apache-APISIX-Ingress-Controller-released</link>
+            <guid>Apache APISIX Ingress Controller 首个 GA 版本 v1.0 正式发布！</guid>
+            <pubDate>Fri, 18 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[@tao12345666333, Apache APISIX commiter from Shenzhen Zhiliu Technology Co.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Chaos Mesh 助力 Apache APISIX 提升稳定性]]></title>
+            <link>https://apisix.apache.org/blog/2021/06/16/Chaos-Mesh-helps-Apache-APISIX-improve-stability</link>
+            <guid>Chaos Mesh 助力 Apache APISIX 提升稳定性</guid>
+            <pubDate>Wed, 16 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[@Yiyiyimu,Apache APISIX committer from Shenzhen Zhiliu Technology Co.]]></description>
+        </item>
         <item>
             <title><![CDATA[Apache APISIX not affected by NGINX CVE-2021-23017]]></title>
             <link>https://apisix.apache.org/blog/2021/06/07/Apache-APISIX-not-affected-by-NGINX-CVE-2021-23017</link>
             <guid>Apache APISIX not affected by NGINX CVE-2021-23017</guid>
             <pubDate>Mon, 07 Jun 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[@Serendipity96, Apache APISIX contributor from Shenzhen Zhiliu Technology Co.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[基于 Apache APISIX 实现的服务网格项目正式开源]]></title>
+            <link>https://apisix.apache.org/blog/2021/05/31/基于 Apache APISIX 实现的服务网格项目正式开源</link>
+            <guid>基于 Apache APISIX 实现的服务网格项目正式开源</guid>
+            <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[@tokers, Apache APISIX PMC from Shenzhen Zhiliu Technology Co.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Apache APISIX 2.6.0-Release 正式发布]]></title>
+            <link>https://apisix.apache.org/blog/2021/05/25/Apache APISIX 2.6.0-Release 正式发布</link>
+            <guid>Apache APISIX 2.6.0-Release 正式发布</guid>
+            <pubDate>Tue, 25 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[@spacewander, Core developer of Apache APISIX from Shenzhen Zhiliu Technology Co.]]></description>
         </item>
         <item>
             <title><![CDATA[Traffic Split in Apache APISIX Ingress Controller]]></title>
