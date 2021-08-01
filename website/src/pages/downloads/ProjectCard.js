@@ -9,6 +9,8 @@ import IconDownload from "../../assets/icons/download.svg";
 import IconTriangle from "../../assets/icons/triangle.svg";
 import IconSquare from "../../assets/icons/square.svg";
 import IconHexagon from "../../assets/icons/hexagon.svg";
+import IconStarSolid from "../../assets/icons/star-solid.svg";
+import IconOctagon from "../../assets/icons/octagon.svg";
 
 const Dropdown = (props) => {
   const ref = useRef();
@@ -34,27 +36,27 @@ const ProjectCard = (props) => {
   const [repoStats, setRepoStats] = useState({ stars: 0, issues: 0 });
   const {
     name,
-    nameInParamCase,
     description,
     shape,
     color,
     version,
     releaseDate,
     githubRepo,
+    githubBranch,
+    downloadPath
   } = props;
   const shapeComponent =
     shape === "triangle" ? (
       <IconTriangle />
     ) : shape === "square" ? (
       <IconSquare />
-    ) : (
+    ) : shape === "hexagon" ? (
       <IconHexagon />
+    ) : shape === "star" ? (
+      <IconStarSolid />
+    ) : (
+      <IconOctagon />
     );
-  const downloadLink = `apisix${
-    nameInParamCase !== "apisix" ? "/" + nameInParamCase : ""
-  }/${version}/apache-${
-    nameInParamCase !== "apisix" ? "apisix-" + nameInParamCase : "apisix"
-  }-${version}-src`;
 
   useEffect(() => {
     getGitHubRepoStats(githubRepo).then((stats) => {
@@ -92,7 +94,7 @@ const ProjectCard = (props) => {
           </LeftSideLink>
           <LeftSideLink
             className="downloads-leftsidelink"
-            href={`https://github.com/${githubRepo}/blob/master/CHANGELOG.md`}
+            href={`https://github.com/${githubRepo}/blob/${githubBranch}/CHANGELOG.md`}
             target="_blank"
           >
             <IconDocumentText /> CHANGELOG
@@ -120,21 +122,21 @@ const ProjectCard = (props) => {
           >
             <DropdownItem
               className="download-dropdown-item"
-              href={`https://www.apache.org/dyn/closer.cgi/${downloadLink}.tgz`}
+              href={`https://www.apache.org/dyn/closer.cgi/${downloadPath}.tgz`}
               target="_blank"
             >
               Source
             </DropdownItem>
             <DropdownItem
               className="download-dropdown-item"
-              href={`https://downloads.apache.org/${downloadLink}.tgz.asc`}
+              href={`https://downloads.apache.org/${downloadPath}.tgz.asc`}
               target="_blank"
             >
               ASC
             </DropdownItem>
             <DropdownItem
               className="download-dropdown-item"
-              href={`https://downloads.apache.org/${downloadLink}.tgz.sha512`}
+              href={`https://downloads.apache.org/${downloadPath}.tgz.sha512`}
               target="_blank"
             >
               SHA512
